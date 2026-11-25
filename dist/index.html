@@ -10,10 +10,11 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 <script defer src="episodes.js"></script>
-<script defer src="timestamps.js"></script>
-<script defer src="app.js"></script>
+<script defer src="timestamps.js?v=2"></script>
+<script defer src="locale.js?v=2"></script>
+<script defer src="app.js?v=2"></script>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="symbols" aria-hidden="true">
@@ -29,26 +30,26 @@
 </svg>
 <header class="top"><div class="wrap top-inner">
 <a href="#" class="brand" aria-label="English on Air, accueil"><span class="logo"><svg><use href="#wave"/></svg></span>English<span>on Air</span></a>
-<nav aria-label="Navigation principale"><button data-view="episodes" aria-current="page">Épisodes</button><button data-view="review">Ma révision</button></nav>
-<span class="progress" id="progress"></span>
+<nav aria-label="Navigation principale"><button data-view="episodes" aria-current="page"><span data-copy="episodes">Épisodes</span></button><button data-view="review"><span data-copy="review">Ma révision</span></button></nav>
+<div class="top-tools"><span class="progress" id="progress"></span><select id="language" aria-label="Langue / Language"><option value="fr">Français</option><option value="en">English</option></select></div>
 </div></header>
 <main class="wrap">
 <section id="catalog">
 <div class="hero">
 <div class="hero-copy">
 <p class="eyebrow"><span></span> ENGLISH PODCASTS</p>
-<h1>L’anglais,<br><em>à l’oreille.</em></h1>
-<p class="intro">Des dialogues courts pour parler anglais au quotidien, au travail et en voyage.</p>
-<button class="primary" id="hero-play"><svg><use href="#play"/></svg> Écouter le premier épisode</button>
+<h1><span data-copy="heroTop">L’anglais,</span><br><em data-copy="heroBottom">à l’oreille.</em></h1>
+<p class="intro"><span data-copy="intro">Des dialogues courts pour parler anglais au quotidien, au travail et en voyage.</span></p>
+<button class="primary" id="hero-play"><svg><use href="#play"/></svg> <span data-copy="first">Écouter le premier épisode</span></button>
 </div>
 </div>
 <section class="library" aria-labelledby="library-heading">
-<div class="section-heading"><div><h2 id="library-heading">Les épisodes</h2><p id="count"></p></div>
+<div class="section-heading"><div><h2 id="library-heading"><span data-copy="library">Les épisodes</span></h2><p id="count"></p></div>
 <label class="search"><svg><use href="#search"/></svg><input id="search" type="search" aria-label="Rechercher un épisode" placeholder="Rechercher un épisode"></label></div>
 <div class="filters" id="filters" aria-label="Thèmes"></div>
 <div class="grid" id="episodes"></div>
 </section></section>
-<section id="review" class="library" hidden aria-labelledby="review-title"><h1 id="review-title">Ma révision</h1><p class="muted">Retrouvez vos épisodes terminés et vos expressions enregistrées.</p><h2>Mes expressions</h2><div id="saved"></div><h2>Épisodes terminés</h2><div class="grid" id="completed"></div></section>
+<section id="review" class="library" hidden aria-labelledby="review-title"><h1 id="review-title"><span data-copy="review">Ma révision</span></h1><p class="muted"><span data-copy="reviewIntro">Retrouvez vos épisodes terminés et vos expressions enregistrées.</span></p><h2><span data-copy="myExpressions">Mes expressions</span></h2><div id="saved"></div><h2><span data-copy="completed">Épisodes terminés</span></h2><div class="grid" id="completed"></div></section>
 </main>
 <dialog id="lesson" aria-labelledby="lesson-title">
 <div id="lesson-content"></div>

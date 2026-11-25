@@ -4,3 +4,6 @@
 @media(max-width:490px){.grid{grid-template-columns:1fr}.hero h1{font-size:3.6rem}.card .desc{min-height:0}.progress{font-size:.8rem}#lesson-content{padding:17px}}
 @supports(padding:max(0px)){.wrap{padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}.library{padding-bottom:max(56px,env(safe-area-inset-bottom))}}
 @media(min-width:761px){.wrap{padding-inline:32px}}
+.top-tools{display:flex;align-items:center;gap:12px}.top-tools select{max-width:100%;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);padding:6px 8px}
+@media(max-width:480px){.top-tools{gap:7px}.top-tools select{font-size:.875rem}.top-inner{column-gap:8px}}
+@media(max-width:380px){.top-inner{align-items:flex-start}.top-tools{align-items:flex-end;flex-direction:column}.top-tools select{padding-block:4px}}
