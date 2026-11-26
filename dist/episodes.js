@@ -97,5 +97,37 @@ window.episodes = [
 ["I’ll ask the kitchen about the ingredients and how it’s prepared.","Je vais demander en cuisine quels sont les ingrédients et comment elle est préparée."],
 ["Thank you. I also need to avoid food prepared with the same utensils.","Merci. Je dois aussi éviter les aliments préparés avec les mêmes ustensiles."],
 ["I’ll pass that on. Please wait until I’ve spoken to the chef before you order.","Je vais transmettre l’information. Attendez que j’aie parlé au chef avant de commander, s’il vous plaît."]
-],[["nut allergy","allergie aux fruits à coque"],["contain","contenir"],["pass that on","transmettre l’information"]],["Que va faire le serveur avant de prendre la commande ?",["Changer les ustensiles à table","Apporter immédiatement la soupe","Vérifier auprès du chef"],2,"« Wait until I’ve spoken to the chef » indique que le serveur doit d’abord parler au chef."]]
+],[["nut allergy","allergie aux fruits à coque"],["contain","contenir"],["pass that on","transmettre l’information"]],["Que va faire le serveur avant de prendre la commande ?",["Changer les ustensiles à table","Apporter immédiatement la soupe","Vérifier auprès du chef"],2,"« Wait until I’ve spoken to the chef » indique que le serveur doit d’abord parler au chef."]],
+["phone",0,"A2","Sorry, I didn’t catch that","Demander de répéter, de ralentir ou d’épeler un nom au téléphone.",[
+["Good morning. Can I take your name, please?","Bonjour. Puis-je prendre votre nom ?"],
+["Yes, it’s Lynn Shaw.","Oui, c’est Lynn Shaw."],
+["Sorry, I didn’t catch your last name. Could you say it again more slowly?","Désolé, je n’ai pas bien entendu votre nom de famille. Pourriez-vous le répéter plus lentement ?"],
+["Of course. It’s Shaw.","Bien sûr. C’est Shaw."],
+["Could you spell that for me, please?","Vous pourriez me l’épeler, s’il vous plaît ?"],
+["Sure. S, H, A, W.","Bien sûr. S, H, A, W."]
+],[["I didn’t catch that","Je n’ai pas bien entendu"],["say it again more slowly","le répéter plus lentement"],["Could you spell that?","Vous pourriez l’épeler ?"]],["Quel nom de famille Lynn épelle-t-elle ?",["Shore","Shaw","Snow"],1,"Lynn épelle son nom S, H, A, W."]],
+["baggage",2,"B1","My bag didn’t arrive","Décrire un bagage manquant et demander comment suivre sa livraison.",[
+["Hi. My suitcase didn’t come out on the belt. I was on the flight from Dublin.","Bonjour. Ma valise n’est pas arrivée sur le tapis. J’étais sur le vol en provenance de Dublin."],
+["Could I see your baggage tag? And what does the suitcase look like?","Puis-je voir votre étiquette bagage ? Et à quoi ressemble la valise ?"],
+["Here’s the tag. It’s a small black case with a red strap.","Voici l’étiquette. C’est une petite valise noire avec une sangle rouge."],
+["We’ll file a report. Where should we deliver it if we find it?","Nous allons faire un signalement. Où devons-nous la livrer si nous la retrouvons ?"],
+["To the Park Hotel, at eighteen King Street. When can I expect an update?","Au Park Hotel, au 18 King Street. Quand puis-je espérer avoir des nouvelles ?"],
+["We’ll email you by tomorrow morning. You can also track the report online.","Nous vous enverrons un e-mail d’ici demain matin. Vous pouvez aussi suivre le dossier en ligne."]
+],[["baggage tag","étiquette bagage"],["file a report","faire un signalement"],["When can I expect an update?","Quand puis-je espérer avoir des nouvelles ?"]],["Quand le voyageur recevra-t-il un e-mail ?",["Dans l’heure","D’ici ce soir","D’ici demain matin"],2,"« By tomorrow morning » signifie « d’ici demain matin »."]],
+["interview",1,"B2","Let me give you an example","En entretien, raconter une difficulté, expliquer son rôle et chiffrer le résultat.",[
+["Tell me about a time you improved a process that wasn’t working well.","Parlez-moi d’une fois où vous avez amélioré un processus qui fonctionnait mal."],
+["Let me give you an example. At my last job, customer requests often sat in the inbox for two days before anyone picked them up.","Je vais vous donner un exemple. Dans mon poste précédent, les demandes des clients restaient souvent deux jours dans la boîte de réception avant que quelqu’un les prenne en charge."],
+["What did you do about it?","Qu’avez-vous fait pour y remédier ?"],
+["I looked at a month of requests and found that nobody owned the inbox on busy days. I set up a rota so one person was responsible each day.","J’ai examiné un mois de demandes et constaté que personne ne gérait la boîte les jours chargés. J’ai instauré un roulement pour qu’une personne en soit responsable chaque jour."],
+["And how did you measure the impact?","Et comment avez-vous mesuré l’impact ?"],
+["I tracked the time to first reply. Within a month, it went from two working days to under four hours.","J’ai suivi le délai de première réponse. En un mois, il est passé de deux jours ouvrés à moins de quatre heures."]
+],[["pick up a request","prendre en charge une demande"],["set up a rota","mettre en place un roulement"],["time to first reply","délai de première réponse"]],["Quel résultat la personne a-t-elle mesuré ?",["Le délai de première réponse est passé sous les quatre heures","Le nombre de demandes a été divisé par deux","Toutes les demandes ont été traitées en quatre heures"],0,"Elle mesure le « time to first reply », qui est passé à moins de quatre heures."]],
+["numbers",0,"A2","Fifteen or fifty?","À l’oreille, distinguer fifteen et fifty, can et can’t, puis vérifier une adresse.",[
+["Hi. Can you deliver to fifty Market Street this afternoon?","Bonjour. Pouvez-vous livrer au 50 Market Street cet après-midi ?"],
+["Did you say fifteen or fifty?","Vous avez dit quinze ou cinquante ?"],
+["Fifty. Five zero. The door is next to a bookshop.","Cinquante. Cinq zéro. La porte est à côté d’une librairie."],
+["We can deliver there, but we can’t make it before four.","Nous pouvons livrer là-bas, mais nous ne pouvons pas arriver avant quatre heures."],
+["That’s fine. So you can come after four?","Ça me va. Donc vous pouvez venir après quatre heures ?"],
+["Yes. After four, at fifty Market Street.","Oui. Après quatre heures, au 50 Market Street."]
+],[["fifteen / fifty","quinze / cinquante"],["we can / we can’t","nous pouvons / nous ne pouvons pas"],["Did you say…?","Vous avez dit… ?"]],["Quelle livraison a été confirmée ?",["15 Market Street, après 16 h","50 Market Street, avant 16 h","50 Market Street, après 16 h"],2,"Le livreur confirme « after four » et « fifty Market Street », soit le numéro 50."]]
 ];

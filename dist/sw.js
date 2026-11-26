@@ -1,11 +1,12 @@
-const cacheName = 'english-on-air-v3';
+const cacheName = 'english-on-air-v4';
 const assets = [
-  './', './index.html', './style.css?v=2', './episodes.js?v=3', './timestamps.js?v=3', './app.js?v=2', './locale.js?v=3',
+  './', './index.html', './style.css?v=2', './episodes.js?v=4', './timestamps.js?v=4', './app.js?v=2', './locale.js?v=4',
   './hero.jpg', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png',
   './audio/coffee.mp3?v=2', './audio/meeting.mp3?v=2', './audio/airport.mp3?v=2',
   './audio/plans.mp3?v=2', './audio/deadline.mp3?v=2', './audio/hotel.mp3?v=2',
   './audio/returns.mp3?v=2', './audio/repair.mp3?v=2', './audio/handover.mp3?v=2',
-  './audio/pushback.mp3?v=2', './audio/train.mp3?v=2', './audio/allergy.mp3?v=2'
+  './audio/pushback.mp3?v=2', './audio/train.mp3?v=2', './audio/allergy.mp3?v=2',
+  './audio/phone.mp3?v=2', './audio/baggage.mp3?v=2', './audio/interview.mp3?v=2', './audio/numbers.mp3?v=2'
 ];
 
 self.addEventListener('install', event => {
