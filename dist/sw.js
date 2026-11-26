@@ -1,6 +1,6 @@
-const cacheName = 'english-on-air-v4';
+const cacheName = 'english-on-air-v5';
 const assets = [
-  './', './index.html', './style.css?v=2', './episodes.js?v=4', './timestamps.js?v=4', './app.js?v=2', './locale.js?v=4',
+  './', './index.html', './style.css?v=5', './episodes.js?v=4', './timestamps.js?v=4', './app.js?v=5', './locale.js?v=5',
   './hero.jpg', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png',
   './audio/coffee.mp3?v=2', './audio/meeting.mp3?v=2', './audio/airport.mp3?v=2',
   './audio/plans.mp3?v=2', './audio/deadline.mp3?v=2', './audio/hotel.mp3?v=2',

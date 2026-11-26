@@ -7,3 +7,5 @@
 .top-tools{display:flex;align-items:center;gap:12px}.top-tools select{max-width:100%;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);padding:6px 8px}
 @media(max-width:480px){.top-tools{gap:7px}.top-tools select{font-size:.875rem}.top-inner{column-gap:8px}}
 @media(max-width:380px){.top-inner{align-items:flex-start}.top-tools{align-items:flex-end;flex-direction:column}.top-tools select{padding-block:4px}}
+
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}.hero-actions .secondary{padding:12px 15px}#library-heading{scroll-margin-top:16px}

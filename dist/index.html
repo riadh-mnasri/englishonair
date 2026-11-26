@@ -10,11 +10,11 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=5">
 <script defer src="episodes.js?v=4"></script>
 <script defer src="timestamps.js?v=4"></script>
-<script defer src="locale.js?v=4"></script>
-<script defer src="app.js?v=2"></script>
+<script defer src="locale.js?v=5"></script>
+<script defer src="app.js?v=5"></script>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="symbols" aria-hidden="true">
@@ -40,11 +40,12 @@
 <p class="eyebrow"><span></span> ENGLISH PODCASTS</p>
 <h1><span data-copy="heroTop">L’anglais,</span><br><em data-copy="heroBottom">à l’oreille.</em></h1>
 <p class="intro"><span data-copy="intro">Des dialogues courts pour parler anglais au quotidien, au travail et en voyage.</span></p>
-<button class="primary" id="hero-play"><svg><use href="#play"/></svg> <span data-copy="first">Écouter le premier épisode</span></button>
+<div class="hero-actions"><button class="primary" id="hero-play"><svg><use href="#play"/></svg> <span data-copy="first">Écouter le premier épisode</span></button>
+<button class="secondary" id="hero-browse" data-copy="browse">Voir tous les épisodes</button></div>
 </div>
 </div>
 <section class="library" aria-labelledby="library-heading">
-<div class="section-heading"><div><h2 id="library-heading"><span data-copy="library">Les épisodes</span></h2><p id="count"></p></div>
+<div class="section-heading"><div><h2 id="library-heading" tabindex="-1"><span data-copy="library">Les épisodes</span></h2><p id="count"></p></div>
 <label class="search"><svg><use href="#search"/></svg><input id="search" type="search" aria-label="Rechercher un épisode" placeholder="Rechercher un épisode"></label></div>
 <div class="filters" id="filters" aria-label="Thèmes"></div>
 <div class="grid" id="episodes"></div>

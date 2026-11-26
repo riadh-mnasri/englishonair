@@ -11,6 +11,8 @@ const persist = () => {
   catch { /* The current session remains functional. */ }
 };
 const normalize = value => value.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '').trim();
+const catalogEpisodes = [...episodes].reverse();
+const topicCounts = themeKeys.map((_, index) => episodes.filter(([, topic]) => topic === index).length);
 let theme = -1;
 let openId;
 const t = key => (state.language === 'en' ? english : french)[key];
@@ -35,7 +37,7 @@ function cards(items) {
 }
 function renderCatalog() {
   const query = normalize($('search').value);
-  const filtered = episodes.filter(episode => {
+  const filtered = catalogEpisodes.filter(episode => {
     const [, topic, level, title] = episode;
     return (theme < 0 || theme === topic) &&
     normalize([themeTitle(topic), level, title, localizeEpisode(episode).description].join(' ')).includes(query);
@@ -172,8 +174,8 @@ function applyLanguage() {
   $('search').setAttribute('aria-label', t('search'));
   $('search').placeholder = t('search');
   $('filters').setAttribute('aria-label', t('topics'));
-  $('filters').innerHTML = `<button data-theme="-1">${t('all')}</button>` + themeKeys.map((name, i) =>
-    `<button data-theme="${i}">${icon(icons[i])}${t(name)}</button>`).join('');
+  $('filters').innerHTML = `<button data-theme="-1">${t('all')} (${episodes.length})</button>` + themeKeys.map((name, i) =>
+    `<button data-theme="${i}">${icon(icons[i])}${t(name)} (${topicCounts[i]})</button>`).join('');
   switchView(visibleView);
   renderProgress();
 }
@@ -186,13 +188,25 @@ $('filters').onclick = event => {
   const button = event.target.closest('[data-theme]');
   if (!button) return;
   theme = Number(button.dataset.theme);
+  $('search').value = '';
   renderCatalog();
 };
 $('search').oninput = renderCatalog;
 $('hero-play').onclick = () => openEpisode(episodes[0][0], true);
+function browseCatalog() {
+  theme = -1;
+  $('search').value = '';
+  switchView('episodes');
+  const heading = $('library-heading');
+  heading.focus({preventScroll: true});
+  heading.scrollIntoView();
+}
+$('hero-browse').onclick = browseCatalog;
 document.querySelector('nav').onclick = event => {
   const button = event.target.closest('[data-view]');
-  if (button) switchView(button.dataset.view);
+  if (!button) return;
+  if (button.dataset.view === 'episodes') browseCatalog();
+  else switchView('review');
 };
 document.querySelector('.brand').onclick = event => {
   event.preventDefault();
