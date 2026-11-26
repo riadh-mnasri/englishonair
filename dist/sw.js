@@ -1,9 +1,11 @@
-const cacheName = 'english-on-air-v2';
+const cacheName = 'english-on-air-v3';
 const assets = [
-  './', './index.html', './style.css?v=2', './episodes.js', './timestamps.js?v=2', './app.js?v=2', './locale.js?v=2',
+  './', './index.html', './style.css?v=2', './episodes.js?v=3', './timestamps.js?v=3', './app.js?v=2', './locale.js?v=3',
   './hero.jpg', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png',
   './audio/coffee.mp3?v=2', './audio/meeting.mp3?v=2', './audio/airport.mp3?v=2',
-  './audio/plans.mp3?v=2', './audio/deadline.mp3?v=2', './audio/hotel.mp3?v=2'
+  './audio/plans.mp3?v=2', './audio/deadline.mp3?v=2', './audio/hotel.mp3?v=2',
+  './audio/returns.mp3?v=2', './audio/repair.mp3?v=2', './audio/handover.mp3?v=2',
+  './audio/pushback.mp3?v=2', './audio/train.mp3?v=2', './audio/allergy.mp3?v=2'
 ];
 
 self.addEventListener('install', event => {

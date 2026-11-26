@@ -49,5 +49,53 @@ window.episodes = [
 ["Let me check. We have one available, but it won’t be ready until two.","Je vérifie. Nous en avons une de libre, mais elle ne sera prête qu’à deux heures."],
 ["That’s fine. Could I leave my luggage at reception in the meantime?","Ça me va. Puis-je laisser mes bagages à la réception en attendant ?"],
 ["Certainly. We’ll keep it here and let you know when the room is ready.","Bien sûr. Nous les garderons ici et vous préviendrons quand la chambre sera prête."]
-],[["facing the courtyard","qui donne sur la cour"],["leave my luggage","laisser mes bagages"],["in the meantime","en attendant"]],["Que propose la réception ?",["Un départ tardif","Un remboursement","Une chambre prête à 14 h"],2,"« It won’t be ready until two » indique qu’elle sera prête à deux heures."]]
+],[["facing the courtyard","qui donne sur la cour"],["leave my luggage","laisser mes bagages"],["in the meantime","en attendant"]],["Que propose la réception ?",["Un départ tardif","Un remboursement","Une chambre prête à 14 h"],2,"« It won’t be ready until two » indique qu’elle sera prête à deux heures."]],
+["returns",0,"A2","Can I exchange this?", "Échanger un vêtement et demander une autre taille.",[
+["Hi. I bought this jacket yesterday, but it’s too small.","Bonjour. J’ai acheté cette veste hier, mais elle est trop petite."],
+["No problem. Do you have the receipt?","Pas de souci. Vous avez le ticket de caisse ?"],
+["Yes, here it is. Could I try the next size up?","Oui, le voici. Je pourrais essayer la taille au-dessus ?"],
+["Of course. The fitting rooms are just behind you.","Bien sûr. Les cabines d’essayage sont juste derrière vous."],
+["This one fits much better. Can I exchange it?","Celle-ci me va beaucoup mieux. Je peux l’échanger ?"],
+["Sure. It’s the same price, so there’s nothing extra to pay.","Bien sûr. C’est le même prix, donc vous n’avez rien à payer en plus."]
+],[["receipt","ticket de caisse"],["the next size up","la taille au-dessus"],["fitting room","cabine d’essayage"]],["Pourquoi la personne veut-elle échanger la veste ?",["Elle est trop petite","Elle est trop chère","Elle est abîmée"],0,"« It’s too small » signifie qu’elle est trop petite."]],
+["repair",0,"B1","The heating has stopped working","Décrire une panne et convenir d’un passage à domicile.",[
+["Hi, I’m calling because the heating in my flat has stopped working.","Bonjour, j’appelle parce que le chauffage de mon appartement est en panne."],
+["When did you first notice the problem?","Quand avez-vous remarqué le problème pour la première fois ?"],
+["Last night. I turned the thermostat up, but the radiators are still cold.","Hier soir. J’ai augmenté le thermostat, mais les radiateurs sont toujours froids."],
+["I can send someone tomorrow between nine and twelve.","Je peux envoyer quelqu’un demain entre neuf heures et midi."],
+["I won’t be home before eleven. Could they come a bit later?","Je ne serai pas chez moi avant onze heures. La personne pourrait-elle passer un peu plus tard ?"],
+["Yes. I can book you in for tomorrow between one and three.","Oui. Je peux vous réserver un créneau demain entre treize et quinze heures."]
+],[["stop working","tomber en panne"],["turn the thermostat up","augmenter le thermostat"],["book someone in","réserver un créneau à quelqu’un"]],["Quel créneau est finalement convenu ?",["De 9 h à midi","De 11 h à midi","De 13 h à 15 h"],2,"Le créneau initial est remplacé par « between one and three »."]],
+["handover",1,"B1","Could you walk me through it?","Clarifier une passation et reformuler les prochaines étapes.",[
+["Could you walk me through what I need to do while you’re away?","Tu peux m’expliquer étape par étape ce que je dois faire pendant ton absence ?"],
+["Sure. The main thing is to check the shared inbox each morning.","Bien sûr. Le plus important, c’est de vérifier la boîte partagée chaque matin."],
+["What if a customer asks for a refund?","Et si un client demande un remboursement ?"],
+["Send the request to Maya. She’ll decide whether to approve it.","Transmets la demande à Maya. C’est elle qui décidera de l’approuver ou non."],
+["Got it. So I forward refund requests to Maya and reply to everything else?","Compris. Donc je transmets les demandes de remboursement à Maya et je réponds au reste ?"],
+["Exactly. If you’re unsure about anything, leave me a note in the shared document.","Exactement. Si tu as un doute, laisse-moi une note dans le document partagé."]
+],[["walk me through it","m’expliquer étape par étape"],["shared inbox","boîte de réception partagée"],["forward a request","transmettre une demande"]],["Que faut-il faire d’une demande de remboursement ?",["L’approuver soi-même","La transmettre à Maya","La laisser dans la boîte de réception"],1,"« Send the request to Maya » indique qu’il faut la transmettre à Maya."]],
+["pushback",1,"B2","I see your point, but…","Exprimer un désaccord avec tact et proposer un compromis.",[
+["I’d like to roll out the new process to all teams next month.","J’aimerais déployer le nouveau processus dans toutes les équipes le mois prochain."],
+["I see your point, but I’m concerned we haven’t tested it under real conditions.","Je comprends ton point de vue, mais je crains que nous ne l’ayons pas testé en conditions réelles."],
+["What would you suggest instead?","Qu’est-ce que tu proposerais à la place ?"],
+["Let’s run a two-week pilot with one team and review the feedback before we expand.","Faisons un pilote de deux semaines avec une équipe, puis examinons les retours avant d’élargir le déploiement."],
+["I can get behind that, as long as we agree on what success looks like upfront.","Ça me va, à condition qu’on s’accorde dès le départ sur les critères de réussite."],
+["Agreed. I’ll draft the criteria and share them before Friday.","D’accord. Je vais rédiger une première version des critères et la partager avant vendredi."]
+],[["roll out","déployer"],["I can get behind that","je suis prêt à soutenir cette idée"],["upfront","dès le départ"]],["Quel compromis est retenu ?",["Un pilote de deux semaines avec une équipe","Un déploiement immédiat dans toutes les équipes","Un report sans nouvelle date"],0,"« A two-week pilot with one team » décrit le compromis accepté."]],
+["train",2,"A2","My train has been cancelled","Trouver un autre train et vérifier la validité de son billet.",[
+["Excuse me. My train to York has been cancelled. Is there another one?","Excusez-moi. Mon train pour York a été annulé. Il y en a un autre ?"],
+["Yes, the next one leaves at four twenty from platform six.","Oui, le prochain part à seize heures vingt du quai six."],
+["Can I use the same ticket?","Je peux utiliser le même billet ?"],
+["Yes, you can. Just show it to the conductor.","Oui. Montrez-le simplement au contrôleur."],
+["Thanks. Is it a direct train?","Merci. C’est un train direct ?"],
+["Yes, it goes straight to York.","Oui, il va directement à York."]
+],[["be cancelled","être annulé"],["platform","quai"],["direct train","train direct"]],["Que doit faire le voyageur avec son billet ?",["En acheter un autre","Le montrer au contrôleur","L’échanger au guichet"],1,"« Just show it to the conductor » indique que le billet actuel est valable."]],
+["allergy",2,"B1","Does this contain nuts?","Signaler une allergie au restaurant et demander une vérification.",[
+["Before I order, I should mention that I have a nut allergy.","Avant de commander, je dois vous signaler que je suis allergique aux fruits à coque."],
+["Thanks for letting me know. Which dish were you thinking of?","Merci de me l’avoir signalé. À quel plat pensiez-vous ?"],
+["The tomato soup. Could you check whether it contains any nuts?","La soupe à la tomate. Pourriez-vous vérifier si elle contient des fruits à coque ?"],
+["I’ll ask the kitchen about the ingredients and how it’s prepared.","Je vais demander en cuisine quels sont les ingrédients et comment elle est préparée."],
+["Thank you. I also need to avoid food prepared with the same utensils.","Merci. Je dois aussi éviter les aliments préparés avec les mêmes ustensiles."],
+["I’ll pass that on. Please wait until I’ve spoken to the chef before you order.","Je vais transmettre l’information. Attendez que j’aie parlé au chef avant de commander, s’il vous plaît."]
+],[["nut allergy","allergie aux fruits à coque"],["contain","contenir"],["pass that on","transmettre l’information"]],["Que va faire le serveur avant de prendre la commande ?",["Changer les ustensiles à table","Apporter immédiatement la soupe","Vérifier auprès du chef"],2,"« Wait until I’ve spoken to the chef » indique que le serveur doit d’abord parler au chef."]]
 ];
